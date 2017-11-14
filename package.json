@@ -1,0 +1,19 @@
+{
+  "name": "meteor-ci",
+  "version": "0.0.0",
+  "description": "Npm module for releasing meteor packages from CI",
+  "main": "index.js",
+  "repository": "https://github.com/raix/meteor-ci-package-release.git",
+  "author": "Morten Henriksen <mh@gi2.dk>",
+  "license": "MIT",
+  "bin": {
+    "meteor-ci": "./src/index.js"
+  },
+  "scripts": {
+    "lint": "eslint ./src"
+  },
+  "dependencies": {
+    "commander": "^2.11.0",
+    "eslint": "^4.11.0"
+  }
+}
