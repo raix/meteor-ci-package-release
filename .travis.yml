@@ -12,6 +12,7 @@ cache:
 install:
   - npm install
   - curl https://install.meteor.com/ | sh
+  - export PATH=$HOME/.meteor:$PATH
 script:
   - npm run lint
   - meteor whoami
