@@ -1,6 +1,6 @@
 {
   "name": "meteor-ci",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "Npm module for releasing meteor packages from CI",
   "main": "index.js",
   "repository": "https://github.com/raix/meteor-ci-package-release.git",
@@ -10,10 +10,14 @@
     "meteor-ci": "./src/index.js"
   },
   "scripts": {
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
     "commander": "^2.11.0",
     "eslint": "^4.11.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^8.2.0"
   }
 }
