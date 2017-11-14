@@ -1,4 +1,6 @@
 # meteor-ci-package-release
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/raix/meteor-ci-package-release.svg)](https://greenkeeper.io/)
 Npm module for releasing meteor packages from CI
 
 # Create login token
