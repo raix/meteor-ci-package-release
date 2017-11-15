@@ -7,7 +7,7 @@
   "author": "Morten Henriksen <mh@gi2.dk>",
   "license": "MIT",
   "bin": {
-    "meteor-ci": "./src/index.js"
+    "meteor-ci": "./src/cli.js"
   },
   "scripts": {
     "lint": "eslint ./src",
@@ -21,6 +21,6 @@
     "eslint": "^4.11.0"
   },
   "devDependencies": {
-    "semantic-release": "^8.2.0"
+    "semantic-release": "^9.1.1"
   }
 }
