@@ -27,10 +27,10 @@ module.exports = function (cryptToken, sharedKey = '') {
     throw new Error('Invalid token data');
   }
 
-  const [ username, userId, token ] = tokenData;
+  const [ username, userId, token, session ] = tokenData;
   const type = 'meteor-account';
 
-  if (!username || !userId || !token) {
+  if (!username || !userId || !token || !session) {
     throw new Error('Invalid token data format');
   }
 
@@ -40,6 +40,7 @@ module.exports = function (cryptToken, sharedKey = '') {
         username,
         userId,
         token,
+        session,
         type
       }
     }

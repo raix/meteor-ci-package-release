@@ -19,13 +19,13 @@ module.exports = function (sharedKey = '') {
     .map(key => meteorSessions[key])
     .reduce((meteorAccount, session) => meteorAccount || session.type === 'meteor-account' && session, undefined);
 
-  const { username, userId, token } = meteorAccount || {};
+  const { username, userId, token, session } = meteorAccount || {};
 
-  if (!username || !userId || !token) {
+  if (!username || !userId || !token || !session) {
     throw new Error('You need to login as a meteor developer in order for me to extract a token data');
   }
 
-  const tokenData = JSON.stringify([ username, userId, token ]);
+  const tokenData = JSON.stringify([ username, userId, token, session ]);
 
   const cipher = crypto.createCipher('aes256', sharedKey);
   let cipherText = cipher.update(tokenData, 'utf8', 'base64');
