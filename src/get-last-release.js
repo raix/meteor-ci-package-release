@@ -5,7 +5,7 @@ const semver = require('semver');
 
 const meteorRegistry = 'atmosphere';
 
-module.exports = async ({publishConfig, name}, logger) => {
+module.exports = async (options, logger) => {
   // Load package.js info
   const pkgInfo = JSON.parse(execSync('meteor show --show-all --ejson').toString('utf-8'));
   logger.log('Loaded package.js for package %s', pkgInfo.name);
