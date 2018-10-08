@@ -17,7 +17,7 @@
     "node": ">=8"
   },
   "dependencies": {
-    "commander": "^2.11.0",
+    "commander": "^2.19.0",
     "eslint": "^4.11.0"
   },
   "devDependencies": {
