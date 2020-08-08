@@ -1,3 +1,5 @@
+Package deprecated, no longer maintained
+
 # meteor-ci-package-release
 
 [![Build Status](https://travis-ci.org/raix/meteor-ci-package-release.svg?branch=master)](https://travis-ci.org/raix/meteor-ci-package-release)
