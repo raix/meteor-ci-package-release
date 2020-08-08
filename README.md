@@ -1,4 +1,4 @@
-Package deprecated, no longer maintained
+# Package deprecated, no longer maintained
 
 # meteor-ci-package-release
 
